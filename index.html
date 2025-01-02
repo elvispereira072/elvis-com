@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Elvis Pereira - Desenvolvedor Front-End">
+    <meta name="author" content="Elvis Pereira">
+    <meta property="og:title" content="Portfólio Elvis Pereira">
+    <meta property="og:description" content="Confira o meu portfólio com diversos projetos de desenvolvimento web e serviços oferecidos.">
+    <meta property="og:image" content="URL_do_imagem_aqui.jpg">
+    <meta property="og:url" content="https://seuportfolio.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfólio Elvis Pereira">
+    <meta name="twitter:description" content="Portfólio de Elvis Pereira com projetos de desenvolvimento web e serviços.">
+    <meta name="twitter:image" content="URL_do_imagem_aqui.jpg">
+    <meta name="twitter:site" content="@seutwitter">
+
+    <title>Elvis Services</title>
+    
+    <!-- Link para o ícone da página -->
+    <link rel="icon" href="assets/Digital Bussiness Card.png" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Estilos para o vídeo de fundo */
+        .background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background-size: cover;
+            filter: brightness(0.5);
+        }
+
+        /* Menu Responsivo */
+        .menu-icon {
+            display: none;
+        }
+        @media (max-width: 640px) {
+            .menu-icon {
+                display: block;
+                color: white;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+            .menu-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background-color: rgba(255, 0, 0, 0.9); /* Fundo do menu */
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .menu-links li {
+                margin: 0.5rem 0;
+            }
+            .menu-links li a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.25rem;
+                padding: 0.5rem;
+                display: block;
+                transition: background-color 0.3s, transform 0.3s;
+            }
+            .menu-links li a:hover {
+                background-color: rgb(10, 44, 136);
+                transform: scale(1.05);
+            }
+        }
+
+        /* Adicionando o hover azul para modo desktop */
+        @media (min-width: 641px) {
+            .menu-links li a:hover {
+                color: rgb(10, 44, 136);
+                transform: scale(1.05);
+            }
+        }
+
+        /* Animações e transições para seções */
+        section {
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            opacity: 0.9;
+        }
+
+        li {
+            color: white;
+        }
+
+        /* Animação de entrada suave */
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Efeito de parallax para o vídeo de fundo */
+        .background-video {
+            transform: translateZ(-1px) scale(2);
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-400">
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop class="background-video">
+        <source src="assets/Onibus.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <header class="bg-red-500 shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">Portfólio</h1>
+            <nav>
+                <button id="menu-icon" class="menu-icon">
+                    &#9776;
+                </button>
+                <ul id="menu-links" class="menu-links flex space-x-4">
+                    <li><a href="https://unimedapk-app.vercel.app" class="hover:underline">Unimed</a></li>
+                    <li><a href="https://barbershop-app-phi.vercel.app" class="hover:underline">Barberaria</a></li>
+                    <li><a href="https://manicurestudiocom.vercel.app/" class="hover:underline">Manicure</a></li>
+                    <li><a href="https://manicure-web.vercel.app" class="hover:underline">Manicure Preços</a></li>  
+                    <li> <a href="https://produtos-app.vercel.app/" class="hover:underline">Website</a></li>  
+                </ul>   
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto p-4">
+        <section class="my-8">
+            <h2 class="text-3xl font-bold mb-4 text-white">Projects</h2>
+            <p class="text-lg mb-4 text-white">Eles estão listados no menu acima, é só clicar para visualizar.</p>
+        </section>
+        <section class="my-8">
+            <h2 class="text-3xl font-bold mb-4 text-white">Services</h2>
+            <p class="text-lg mb-4 text-white"></p>
+            <ul class="text-lg mb-4 text-white">
+                <li>Desenvolvimento web</li>
+                <li>Formatação de computadores</li>
+                <li>Segurança de conta Gmail</li>
+                <li>Documentos em PDF</li>
+                <li>Criação de arquivos APK de serviços</li>
+            </ul>
+        </section>
+        <section class="my-8">
+            <h2 class="text-3xl font-bold mb-4 text-white">Contact</h2>
+            <p class="text-lg mb-4 text-white"></p>
+            <ul class="text-lg mb-4 text-white">
+                <li><strong>Email:</strong> elvispereira070@gmail.com</li>
+                <li><strong>Telefone:</strong> (13) 98143-0940</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Ícone flutuante do WhatsApp -->
+    <div class="fixed right-5 bottom-5">
+        <a href="https://wa.me/5513981430940" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-16 h-16 transition-transform transform hover:scale-110">
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var links = document.getElementById('menu-links');
+            if (links.style.display === 'none' || links.style.display === '') {
+                links.style.display = 'flex';
+            } else {
+                links.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
