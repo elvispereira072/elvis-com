@@ -54,7 +54,7 @@
                 flex-direction: column;
                 width: 100%;
                 text-align: center;
-                background-color: rgba(255, 0, 0, 0.9); /* Fundo do menu */
+                background-color: rgba(48, 48, 48, 0.9); /* Quase opaco, mas ainda com um pouco de transparência */
                 padding-top: 1rem;
                 padding-bottom: 1rem;
             }
@@ -108,11 +108,6 @@
             to {
                 opacity: 1;
             }
-        }
-
-        /* Efeito de parallax para o vídeo de fundo */
-        .background-video {
-            transform: translateZ(-1px) scale(2);
         }
 
         /* Adicionando animação ao ícone flutuante do WhatsApp */
@@ -340,11 +335,11 @@
 <body class="bg-black text-gray-400">
     <!-- Vídeo de fundo -->
     <video autoplay muted loop class="background-video">
-        <source src="Onibus.mp4" type="video/mp4">
+        <source src="assets/Onibus.mp4" type="video/mp4">
         Seu navegador não suporta a tag de vídeo.
     </video>
 
-    <header class="bg-red-500 shadow-md p-4">
+    <header class="bg-black-900 shadow-md p-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold text-white">Elvis Front-End Developer</h1>
             <nav>
@@ -388,7 +383,7 @@
             </ul>
         </section>
     </main>
-
+    
     <!-- Ícone flutuante do WhatsApp -->
 <div class="fixed right-5 bottom-5">
     <a href="https://wa.me/5513981430940" target="_blank">
@@ -410,4 +405,3 @@
     </script>
 </body>
 </html>
-
