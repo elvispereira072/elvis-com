@@ -527,12 +527,48 @@
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.8); /* Brilho neon */
 }
 
+
+.content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #034ff3, #0015d3);
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #ff1e00, #fc1404);
+        }
     </style>
 </head>
 <body class="bg-black text-gray-400">
     <!-- Vídeo de fundo -->
     <video autoplay muted loop class="background-video">
-        <source src="Onibus.mp4" type="video/mp4">
+        <source src="assets/Onibus.mp4" type="video/mp4">
         Seu navegador não suporta a tag de vídeo.
     </video>
 
@@ -576,14 +612,19 @@
         </section>
 
         <section class="my-8">
-    <h2 class="text-3xl font-bold mb-4 text-white">Spotify</h2>
-    <p class="text-lg mb-4 text-white"></p>
-    <ul class="text-lg mb-4 text-white">
-        <li><strong>Instrumental Music:</strong> <a href="https://open.spotify.com/playlist/6g50yoOIbnaeDrDftkn10P?si=fsF6XNtmQSGAkiGCTP5sww&pi=8urxm8sxS2u5n" target="_blank" class="text-blue-500 underline">Listen here</a></li> 
-    </ul>
-</section>
+            <h2 class="text-3xl font-bold mb-4 text-white">Bussiness card</h2>
+            <p class="text-lg mb-4 text-white"></p>
+            <ul class="text-lg mb-4 text-white">
+                <li>
+                    <strong></strong>
+                    <a href="mailto:elvispereira070@gmail.com" class="text-blue-500 underline">
+                        <img src="assets/Digital Bussiness Card.png" alt="" class="inline-block w-24 h-30">
+                    </a>
+                </li>
+            </ul>
+        </section>
         
-        <section class="my-8">
+<section class="my-8">
             <h2 class="text-3xl font-bold mb-4 text-white">Contact</h2>
             <p class="text-lg mb-4 text-white"></p>
             <ul class="text-lg mb-4 text-white">
@@ -591,6 +632,26 @@
             </ul>
         </section>
     </main>
+
+    <div class="content">
+        <h1>Nethorking</h1>
+        <br>
+        <div class="social-icons">
+            <!-- Link para o perfil do LinkedIn -->
+            <a href="https://www.linkedin.com/in/frontendelvis" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Link para o perfil do Facebook -->
+            <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61570883545565" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+             <!-- Link para a playlist do Spotify -->
+        <a href="https://open.spotify.com/playlist/6g50yoOIbnaeDrDftkn10P?si=fsF6XNtmQSGAkiGCTP5sww&pi=8urxm8sxS2u5n&nd=1&dlsi=03904825f9d94f36" target="_blank">
+            <i class="fab fa-spotify"></i>
+        </a>
+        </div>
+    </div>
     
     <!-- Ícone flutuante do WhatsApp -->
 <div class="fixed right-5 bottom-5">
